@@ -1,4 +1,5 @@
 @import "_variables";
+@import "fonts";
 @import "reset";
 
 
@@ -12,3 +13,45 @@ img {
   max-width: 100%;
 }
 
+header {
+  padding: 18px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  flex-direction: row;
+  line-height: 1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  a {
+    display: inline-block;
+    font-family: 'Metric';
+    font-size: 17px;
+    font-weight: 500;
+    color: #284f38;
+    letter-spacing: .035em;
+
+    span {
+      color: #9d9d9d;
+    }
+  }
+
+  nav {
+
+    ul {
+      display: flex;
+    }
+
+    a {
+      font-family: 'Metric';
+      font-size: 17px;
+      font-weight: 300;
+      color: #000;
+      padding-right: 17px;
+      letter-spacing: .035em;
+    }
+  }
+}
